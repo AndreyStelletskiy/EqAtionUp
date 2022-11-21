@@ -13,6 +13,13 @@
         android:theme="@style/Theme.HomeScreen"
         tools:targetApi="10">
         <activity
+            android:name=".quadraticequation"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".Othertask"
             android:exported="false"
             android:label="Other task">

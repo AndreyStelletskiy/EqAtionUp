@@ -48,6 +48,7 @@
                 android:layout_marginLeft="3dp"
                 android:layout_marginRight="3dp"
                 android:layout_weight="1"
+                android:onClick="goquadra"
                 android:text="Квадратное уравнение"
                 android:textSize="13sp" />
         </LinearLayout>
