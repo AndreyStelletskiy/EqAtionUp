@@ -34,5 +34,9 @@ public class Homescreen extends AppCompatActivity {
         Intent intPhy = new Intent(this, Physics.class);
         startActivity(intPhy);
     }
+    public void goOther(View v) {
+        Intent intOther = new Intent(this, Othertask.class);
+        startActivity(intOther);
+    }
 
     }

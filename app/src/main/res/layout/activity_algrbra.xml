@@ -7,12 +7,24 @@
     tools:context=".Algrbra">
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="1dp">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="7dp"
+            android:gravity="center"
+            android:text="Выберите тип"
+            android:textColor="#000000"
+            android:textSize="16sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -23,21 +35,21 @@
                 android:id="@+id/equationlin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:textSize="13sp"
                 android:layout_marginLeft="3dp"
                 android:layout_marginRight="3dp"
-                android:text="линейное уравнение" />
+                android:layout_weight="1"
+                android:text="линейное уравнение"
+                android:textSize="13sp" />
 
             <Button
                 android:id="@+id/equationqua"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:textSize="13sp"
                 android:layout_marginLeft="3dp"
                 android:layout_marginRight="3dp"
-                android:text="Квадратное уравнение" />
+                android:layout_weight="1"
+                android:text="Квадратное уравнение"
+                android:textSize="13sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -46,24 +58,24 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/inequalitysys"
+                android:id="@+id/taskwork"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="5"
-                android:textSize="13sp"
                 android:layout_marginLeft="3dp"
                 android:layout_marginRight="3dp"
-                android:text="неравенства" />
+                android:layout_weight="5"
+                android:text="Задачи на работу"
+                android:textSize="13sp" />
 
             <Button
-                android:id="@+id/button7"
+                android:id="@+id/inequalitiessys"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:textSize="13sp"
                 android:layout_marginLeft="3dp"
                 android:layout_marginRight="3dp"
-                android:text="система неравенств" />
+                android:layout_weight="1"
+                android:text="система неравенств"
+                android:textSize="13sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -75,21 +87,50 @@
                 android:id="@+id/equationssys"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:textSize="13sp"
                 android:layout_marginLeft="3dp"
                 android:layout_marginRight="3dp"
-                android:text="система уравнений" />
+                android:layout_weight="1"
+                android:text="система уравнений"
+                android:textSize="13sp" />
 
             <Button
-                android:id="@+id/button9"
+                android:id="@+id/tasksmovement"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:textSize="13sp"
                 android:layout_marginLeft="3dp"
                 android:layout_marginRight="3dp"
-                android:text="Button" />
+                android:layout_weight="1"
+                android:text="Задачи на движение"
+                android:textSize="13sp" />
         </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/inequalities"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:text="неравенства"
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/tasksmix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:text="задачи на смеси"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

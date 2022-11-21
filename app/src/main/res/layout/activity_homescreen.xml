@@ -8,42 +8,64 @@
     tools:context=".Homescreen">
 
     <LinearLayout
-        android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        tools:layout_editor_absoluteY="5dp"
-        tools:ignore="MissingConstraints">
+        android:layout_marginTop="1dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-        <Button
-            android:id="@+id/algebra"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="3dp"
-            android:layout_marginRight="4dp"
-            android:onClick="goalg"
-            android:text="algebra"
-            android:layout_weight="1" />
+            android:gravity="center"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints">
 
-        <Button
-            android:id="@+id/geometry"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="4dp"
-            android:layout_marginRight="4dp"
-            android:onClick="gogeo"
-            android:layout_weight="1"
-            android:text="geometry" />
+            <Button
+                android:id="@+id/algebra"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+                android:onClick="goalg"
+                android:text="algebra" />
 
-        <Button
-            android:id="@+id/physics"
-            android:layout_width="wrap_content"
+            <Button
+                android:id="@+id/geometry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+                android:onClick="gogeo"
+                android:text="geometry" />
+
+            <Button
+                android:id="@+id/physics"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:onClick="gophy"
+                android:text="physics" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="4dp"
-            android:layout_marginRight="3dp"
-            android:onClick="gophy"
-            android:layout_weight="1"
-            android:text="physics" />
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/othertasks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="goOther"
+                android:text="другие Задания" />
+        </LinearLayout>
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
